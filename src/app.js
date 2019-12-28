@@ -23,7 +23,7 @@ app.use(express.static(publicDirectoryPath));
 //routes
 app.get('/', (req, res) => {
 	res.render("index", {
-		title: "Weather App",
+		title: "Weather Robo",
 		name: "Developed By Robo Admin"
 	})
 })
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 
 app.get("/about", (req, res) => {
 	res.render("about", {
-		title: "About me",
+		title: "About Robo",
 		name: "Developed By Robo Admin"
 	})
 })
@@ -40,7 +40,7 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
 	res.render("help", {
 		title: "Need Help?",
-		name: "Robo Admin"
+		name: "Developed By Robo Admin"
 	})
 })
 
